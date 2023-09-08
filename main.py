@@ -38,16 +38,16 @@ if __name__ == '__main__':
                 url_list = f.read().splitlines()
 
     if url_list:
-        print('Скачиваем файлы последовательно')
+        print('Скачиваем файлы последовательно (consistent)')
         pu.download_consistent(url_list, 'consistent')
 
-        print('\nСкачиваем файлы с помощью потоков')
+        print('\nСкачиваем файлы с помощью потоков (threads)')
         pu.download_threads(url_list, 'threads')
 
-        print('\nСкачиваем файлы с помощью процессов')
+        print('\nСкачиваем файлы с помощью процессов (multiprocessor)')
         pu.download_multiprocessor(url_list, 'multiprocessor')
 
-        print('\nСкачиваем файлы асинхронно')
+        print('\nСкачиваем файлы асинхронно (asynchronous)')
         pu.download_asynchronous(url_list, 'async')
     else:
         print('Список url для скачивания пуст!')
