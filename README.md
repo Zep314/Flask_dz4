@@ -21,5 +21,18 @@
 
 ### Результат работы:
 
-Результат находится в файле main.py
+Результат находится в файле main.py и библиотеке parallel_utils
 
+    (venv) PS C:\Work\python\Flask\Flask_dz4> python .\main.py -url https://koshka.top/uploads/posts/2021-12/1640160492_1-koshka-top-p-milenkie-kotiki-1.jpg https://s0.bloknot-voronezh.ru/thumb/650x0xcut/upload/iblock/509/0d1587dc21_7605080_8213488.jpg https://i.pinimg.com/750x/c0/9a/95/c09a95b2cf68622f65e94c23c215976c.jpg https://cdn.recyclemag.ru/content/e/ed6f4f0569bdb95e43848dd3bb99ba49.jpg https://static.life.ru/publications/2023/7/28/524435696105.9184.jpg
+    Скачиваем файлы последовательно
+    Время выполнения: 1.643 сек
+   
+    Скачиваем файлы с помощью потоков
+    Время выполнения: 0.536 сек
+   
+    Скачиваем файлы с помощью процессов
+    Время выполнения: 1.861 сек
+   
+    Скачиваем файлы асинхронно
+    Время выполнения: 0.647 сек
+    (venv) PS C:\Work\python\Flask\Flask_dz4>
